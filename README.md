@@ -1,61 +1,62 @@
-# Solaris • E-commerce de Energia Solar
+# Solaris • E-commerce de Energia Solar & Gestão Inteligente
 
 ## 🚀 Visão Geral do Projeto
 
-O **Solaris** é uma plataforma de e-commerce especializada em soluções de energia solar, como painéis fotovoltaicos e inversores. O projeto foi desenvolvido para oferecer uma experiência de compra fluida, integrando um catálogo de produtos dinâmico com um sistema de fechamento de pedidos via WhatsApp, ideal para negócios que buscam atendimento personalizado.
+O **Solaris** é uma aplicação web robusta para o setor de energia solar. Mais do que um simples e-commerce, o projeto integra um catálogo de produtos, uma calculadora de eficiência energética e um **Painel Administrativo completo** com autenticação e proteção de rotas, utilizando o ecossistema Firebase.
 
 **🔗 Link do Projeto:** [https://solar-ecommerce-3992b.web.app/](https://solar-ecommerce-3992b.web.app/)
 
 ---
 
-## ✨ Funcionalidades Principais
+## 🛠️ Arquitetura Técnica e Diferenciais
 
-### 🛒 Experiência do Cliente
-*   **Catálogo Dinâmico:** Visualização de produtos com detalhes de potência, marca e preço.
-*   **Carrinho de Compras:** Adição e gerenciamento de itens em tempo real.
-*   **Calculadora Solar:** Ferramenta integrada para ajudar o cliente a estimar suas necessidades energéticas (funcionalidade estratégica para conversão).
-*   **Checkout via WhatsApp:** Finalização de compra enviando os dados do carrinho diretamente para o vendedor, garantindo agilidade no atendimento.
+A estrutura do projeto foi desenhada seguindo princípios de **modularidade** e **separação de responsabilidades**, o que facilita a manutenção e escalabilidade:
 
-### 🛠️ Painel Administrativo (Gerente)
-*   **Gestão de Inventário:** Interface para adicionar, editar ou remover produtos do catálogo.
-*   **Controle de Preços:** Alteração dinâmica de valores e disponibilidade de itens.
-*   **Autenticação:** Sistema de login seguro para acesso às ferramentas de gestão.
+### 🔹 Front-end Modular (JavaScript ES6+)
+*   **`auth.js` & `cadastrar.js`:** Gerenciamento completo de autenticação de usuários.
+*   **`calculator.js`:** Lógica complexa para cálculo de economia e necessidade energética.
+*   **`cart.js` & `ui.js`:** Manipulação dinâmica do DOM para uma experiência de usuário fluida.
+*   **`guard.js`:** Implementação de Middlewares de segurança para proteger rotas administrativas.
+*   **`gestao.js` & `orders.js`:** Módulos dedicados ao CRUD de produtos e controle de pedidos.
 
----
-
-## 🛠️ Tecnologias Utilizadas
-
-O projeto demonstra competências sólidas em desenvolvimento Front-end e lógica de integração:
-
-*   **Linguagens:** HTML5, CSS3, JavaScript (ES6+).
-*   **Design:** Interface responsiva, moderna e focada em UX (User Experience).
-*   **Integrações:** API do WhatsApp para automação de mensagens de pedido.
-*   **Hospedagem:** Firebase Hosting (identificado pela URL `.web.app`).
+### 🔹 Backend & Integrações
+*   **Firebase Ecosystem:** Uso de Firebase Auth para segurança e Hosting para deploy.
+*   **`luvik-proxy-server`:** Implementação de um servidor proxy para lidar com integrações externas e segurança de dados.
+*   **WhatsApp API:** Automação do fechamento de pedidos diretamente para o setor comercial.
 
 ---
 
-## 📂 Estrutura do Repositório
+## ✨ Funcionalidades em Destaque
+
+| Funcionalidade | Descrição Técnica |
+| :--- | :--- |
+| **Calculadora Solar** | Algoritmo que processa dados de consumo para sugerir o kit ideal. |
+| **Painel de Gestão** | Interface administrativa para controle total de estoque e preços. |
+| **Sistema de Carrinho** | Persistência e gerenciamento de itens com cálculo de frete/total. |
+| **Segurança (Guards)** | Proteção de páginas sensíveis, garantindo que apenas admins acessem a gestão. |
+
+---
+
+## 📂 Estrutura do Projeto (Real)
 
 ```text
-solar-ecommerce/
-├── public/              # Arquivos estáticos e HTML principal
-├── src/
-│   ├── css/             # Estilização avançada e responsividade
-│   ├── js/              # Lógica do carrinho, calculadora e admin
-│   └── assets/          # Imagens de produtos e identidade visual
-├── README.md            # Documentação do projeto
-└── .gitignore           # Configurações de exclusão do Git
+SOLARIS/
+├── assets/              # Recursos visuais e identidade da marca
+│   ├── css/             # Estilização modular
+│   └── js/              # Core Business Logic (app.js, auth.js, calculator.js, etc.)
+├── luvik-proxy-server/  # Servidor proxy para integrações de API
+├── public/              # Páginas HTML (index, admin, calculator, cart, etc.)
+├── firebase.json        # Configurações de infraestrutura Firebase
+└── package.json         # Gerenciamento de dependências e scripts
 ```
 
 ---
 
-## 🚀 Como Executar o Projeto
+## 🚀 Como Executar
 
-1.  Clone este repositório:
-    ```bash
-    git clone https://github.com/nereucsf/ecommerce-whatsapp-portfolio.git
-    ```
-2.  Abra o arquivo `index.html` no seu navegador ou utilize o **Live Server** no VS Code.
+1.  Clone o repositório.
+2.  Instale as dependências (se houver) na pasta do proxy server.
+3.  Utilize o Firebase CLI para rodar localmente: `firebase serve`.
 
 ---
 
@@ -66,4 +67,4 @@ solar-ecommerce/
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:seu.email@example.com)
 
 ---
-*Este projeto faz parte do meu portfólio profissional para demonstrar habilidades em desenvolvimento Full-Stack e resolução de problemas reais de negócio.*
+*Este projeto demonstra competências em Desenvolvimento Full-Stack, Segurança de Aplicações, Integração de APIs e Cloud Hosting.*
