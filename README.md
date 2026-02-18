@@ -17,6 +17,10 @@ O **Solaris** é uma aplicação web robusta para o setor de energia solar. Mais
 Ferramenta para estimativa de consumo, potência necessária e retorno sobre o investimento (Payback).
 ![Solaris Calculator](docs/screenshots/calculator.png)
 
+### 🛒 Carrinho & Checkout via WhatsApp
+Fluxo de compra dinâmico com integração direta para fechamento de pedido via API do WhatsApp.
+![Solaris Cart](docs/screenshots/cart.png)
+
 ---
 
 ## 🛠️ Arquitetura Técnica e Diferenciais
