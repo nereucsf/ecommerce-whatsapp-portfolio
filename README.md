@@ -8,6 +8,13 @@ O **Solaris** é uma aplicação web robusta para o setor de energia solar. Mais
 
 ---
 
+## 📸 Demonstração Visual
+
+### 🏠 Home Page & Catálogo
+![Solaris Home Page](docs/screenshots/home.png)
+
+---
+
 ## 🛠️ Arquitetura Técnica e Diferenciais
 
 A estrutura do projeto foi desenhada seguindo princípios de **modularidade** e **separação de responsabilidades**, o que facilita a manutenção e escalabilidade:
