@@ -13,6 +13,10 @@ O **Solaris** é uma aplicação web robusta para o setor de energia solar. Mais
 ### 🏠 Home Page & Catálogo
 ![Solaris Home Page](docs/screenshots/home.png)
 
+### 📊 Calculadora Solar Inteligente
+Ferramenta para estimativa de consumo, potência necessária e retorno sobre o investimento (Payback).
+![Solaris Calculator](docs/screenshots/calculator.png)
+
 ---
 
 ## 🛠️ Arquitetura Técnica e Diferenciais
