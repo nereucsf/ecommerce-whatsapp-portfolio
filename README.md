@@ -62,8 +62,8 @@ SOLARIS/
 
 ## 👨‍💻 Autor
 
-**Seu Nome**  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/seu-perfil)  
+**Nereu Correia de Souza Filho**  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nereu-correia-de-souza-filho-9525a43a7/)  
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:seu.email@example.com)
 
 ---
