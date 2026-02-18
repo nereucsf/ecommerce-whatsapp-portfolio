@@ -52,12 +52,6 @@ SOLARIS/
 
 ---
 
-## 🚀 Como Executar
-
-1.  Clone o repositório.
-2.  Instale as dependências (se houver) na pasta do proxy server.
-3.  Utilize o Firebase CLI para rodar localmente: `firebase serve`.
-
 ---
 
 ## 👨‍💻 Autor
